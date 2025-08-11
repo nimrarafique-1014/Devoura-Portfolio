@@ -629,7 +629,14 @@ main {
   overflow: hidden;
 }
 
-
+.modal-content .testimonial-location,
+.testimonials-item .testimonial-location {
+  font-size: var(--fs-6);
+  color: var(--light-gray-70);
+  font-weight: var(--fw-300);
+  margin-bottom: 10px;
+  font-style: normal; /* Address tag ko normal text style me rakhega */
+}
 /**
  * #testimonials-modal
  */

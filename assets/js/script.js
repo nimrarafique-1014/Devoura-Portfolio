@@ -25,7 +25,7 @@ const overlay = document.querySelector("[data-overlay]");
 // modal variable
 const modalImg = document.querySelector("[data-modal-img]");
 const modalTitle = document.querySelector("[data-modal-title]");
-const modalDate = document.querySelector("[data-modal-date]"); // Naya variable
+const modalLocation = document.querySelector("[data-modal-location]"); // Naya variable
 const modalText = document.querySelector("[data-modal-text]"); // Ab yeh review content ke liye hai
 
 // modal toggle function
@@ -43,8 +43,7 @@ for (let i = 0; i < testimonialsItem.length; i++) {
     modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
     modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
     // Date aur review content ko update karein
-    modalDate.innerHTML = this.querySelector("[data-testimonials-date]").innerHTML;
-    modalDate.setAttribute("datetime", this.querySelector("[data-testimonials-date]").getAttribute("datetime"));
+    modalLocation.innerHTML = this.querySelector("[data-testimonials-location]").innerHTML;
     modalText.innerHTML = this.querySelector("[data-review-content]").innerHTML;
 
     testimonialsModalFunc();
