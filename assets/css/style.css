@@ -113,21 +113,12 @@
 
 
 .Footer-text {
-  position: absolute;
-  bottom: 15px; /* bottom se 15px ka fasla */
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: 30px; /* Upar wale content se gap ke liye */
+  padding-bottom: 5px; /* Niche se thora gap maintain karne ke liye */
   text-align: center;
   color: var(--light-gray);
   font-size: var(--fs-8);
   width: 100%;
-}
-
-/* Responsive styles for larger screens */
-@media (min-width: 580px) {
-  .Footer-text {
-    bottom: 20px; /* larger screens pe bottom se 20px ka fasla */
-  }
 }
 
 @media (min-width: 768px) {
